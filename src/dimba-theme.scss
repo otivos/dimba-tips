@@ -1,0 +1,11 @@
+@import '@angular/material/theming'; // Unclocks the ng material tools
+
+@include mat-core(); // Base stylings
+
+$dimba-theme-primary: mat-palette($mat-deep-purple);
+$dimba-theme-accent: mat-palette($mat-cyan, A200, A100, A400);
+$dimba-theme-warn: mat-palette($mat-red);
+
+$dimba-theme: mat-light-theme($dimba-theme-primary, $dimba-theme-accent, $dimba-theme-warn);
+
+@include angular-material-theme($dimba-theme);
