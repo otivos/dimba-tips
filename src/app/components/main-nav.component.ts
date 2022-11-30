@@ -14,11 +14,10 @@ import { Component } from "@angular/core";
                     </button>
                     <div class="collapse navbar-collapse" id="navbarText">
                         <div class="navbar-nav mx-auto mb-2 mb-lg-0">
-                            <a href="#" class="nav-link active" aria-current="page" >Home</a>
-                            <a href="#" class="nav-link">Predictions</a>
-                            <a href="#" class="nav-link">Betslip</a>
-                            <a href="#" class="nav-link">Livescores</a>
-                            <a href="#" class="nav-link">Standings</a>
+                            <a [routerLink]="['/home']" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" aria-current="page" >Home</a>
+                            <a href="#" class="nav-link" routerLinkActive="active" >Predictions</a>
+                            <a href="#" class="nav-link" routerLinkActive="active" >Betslip</a>
+                            <a href="#" class="nav-link" routerLinkActive="active" >Livescores</a>
                         </div>
                     </div>
                 </div>
@@ -29,6 +28,9 @@ import { Component } from "@angular/core";
         `   
             nav { background-color: #673C95 !important; height: 50px; margin: 70px 0 15px; }
             nav a { color: #ede7f6; font-size: .895rem; font-weight: 500px; }
+            .navbar-nav a { margin: 0 5px;}
+            .navbar-nav a.active { color: #ffa400 }
+
         `
     ]
 })
