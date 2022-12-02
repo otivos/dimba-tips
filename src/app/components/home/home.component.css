@@ -1,0 +1,24 @@
+mat-sidenav-container {
+    height: 100%;
+}
+
+mat-sidenav-content {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-areas: 'main right-section';
+}
+
+#main {
+    grid-area: main;
+    grid-column: 1/2;
+}
+#right-section {
+    grid-area: right-section;
+    grid-column: 2/3;
+}
+
+
+mat-sidenav {
+    background-color: #673C95;
+    width: 200px;
+}

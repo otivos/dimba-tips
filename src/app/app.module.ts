@@ -7,11 +7,15 @@ import { MaterialModule } from './material/material.module';
 import { MainNavComponent } from './components/main-nav.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './routes';
+import { HomeComponent } from './components/home/home.component';
+import { LeftNavComponent } from './components/home/left-nav/left-nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainNavComponent
+    MainNavComponent,
+    HomeComponent,
+    LeftNavComponent
   ],
   imports: [
     BrowserModule,

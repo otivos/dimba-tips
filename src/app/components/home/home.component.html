@@ -1,5 +1,13 @@
-<div id="home">
-    <div id="left-nav">LEFT NAV</div>
-    <div id="main-content">MAIN CONTENT</div>
-    <div id="right-nav">RIGHT NAV</div>
-</div>
+<mat-sidenav-container>
+    <mat-sidenav mode="side" [(opened)]="opened">
+        <left-nav></left-nav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <main>
+            <div id="main">
+                MAIN SECTION
+            </div>
+        </main>
+        <section id="right-section">RIGHT SECTION</section>
+    </mat-sidenav-content>
+</mat-sidenav-container>
