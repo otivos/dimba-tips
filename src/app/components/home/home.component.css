@@ -2,6 +2,12 @@ mat-sidenav-container {
     height: 100%;
 }
 
+mat-sidenav {
+    background-color: #673C95;
+    width: 200px;
+    color: white;
+}
+
 mat-sidenav-content {
     display: grid;
     grid-template-columns: 1fr 300px;
@@ -15,10 +21,4 @@ mat-sidenav-content {
 #right-section {
     grid-area: right-section;
     grid-column: 2/3;
-}
-
-
-mat-sidenav {
-    background-color: #673C95;
-    width: 200px;
 }
